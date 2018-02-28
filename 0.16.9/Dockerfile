@@ -27,6 +27,8 @@ RUN set -x; \
 COPY run-restbase.sh /run-restbase.sh
 RUN chmod -v +x /run-restbase.sh
 
+COPY pdf.yaml $RB_HOME/v1/
+
 COPY projects_docker.yaml $RB_HOME/projects/docker.yaml
 
 EXPOSE 7231
